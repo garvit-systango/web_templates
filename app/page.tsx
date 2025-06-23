@@ -1,103 +1,114 @@
+"use client";
+
 import Image from "next/image";
+import Link from "next/link";
+import React from "react";
 
-export default function Home() {
+const page = () => {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <>
+      <div className="bg-white">
+        {/* Header */}
+        <div className="flex justify-between bg-white p-4">
+          <Image
+            src="/logo.png"
+            alt="logo"
+            height={50}
+            width={130}
+            className="ml-10"
+          />
+          <div className="flex gap-12 mr-10 items-center text-black text-sm font-bold">
+            <Link className="cursor-pointer" href="#">
+              CATALOGUE
+            </Link>
+            <Link className="cursor-pointer" href="#">
+              FASHION
+            </Link>
+            <Link className="cursor-pointer" href="#">
+              FAVOURITE
+            </Link>
+            <Link className="cursor-pointer" href="#">
+              LIFESTYLE
+            </Link>
+            <button
+              className="bg-black font-normal text-white p-2 cursor-pointer rounded-sm"
+              onClick={() => {}}
+            >
+              SIGN UP
+            </button>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        {/* Hero Section */}
+        <div className="bg-gray-100 px-12 pt-12 mt-2 mb-4 mr-13 ml-13 rounded-4xl">
+          <div className="flex">
+            <div className="p-2 text-black">
+              <p className="text-left text-8xl text-wrap poppins font-extrabold tracking-tight">
+                LET'S EXPLORE UNIQUE CLOTHES.
+              </p>
+              <p className="my-8 text-black font-light text-3xl tracking-tight">
+                Live for influential and innovative fashion!
+              </p>
+              <button className="bg-black p-4 pr-8 pl-8 items-center text-white rounded-lg text-[30px] font-[500]">
+                Shop Now
+              </button>
+            </div>
+            <Image
+              className="mt-6"
+              src="/hero-model-1.png"
+              alt="model-1"
+              height={500}
+              width={690}
+            />
+          </div>
+        </div>
+        {/* Brands Strip */}
+        <div className="flex my-12 bg-amber-300 gap-20 justify-center p-6 items-center">
+          <Image src="/hnm.png" alt="h&m" height={100} width={150} />
+          <Image src="/obey.png" alt="obey" height={100} width={150} />
+          <Image src="/shopify.png" alt="shopify" height={100} width={150} />
+          <Image src="/lacoste.png" alt="lacoste" height={100} width={150} />
+          <Image src="/levis.png" alt="levi's" height={100} width={150} />
+          <Image src="/amazon.png" alt="amazon" height={100} width={150} />
+        </div>
+        {/* NEW ARRIVALS */}
+        <div>
+          <h1 className="text-black font-extrabold text-3xl poppins px-12 mb-14">NEW ARRIVALS</h1>
+          <div className="flex gap-28 justify-center">
+            <div>
+              <Image
+              src='/hoodies.png'
+              alt='hoodies'
+              height={500}
+              width={350}
+              />
+              <p className="text-black poppins text-xl font-medium mt-4">Hoodies & Sweetshirt</p>
+              <Link className="text-gray-600 text-sm cursor-pointer" href='#'>Explore Now!</Link>
+            </div>
+            <div>
+              <Image
+              src='/coots.png'
+              alt='coots'
+              height={500}
+              width={350}
+              />
+              <p className="text-black poppins text-xl font-medium mt-4">Coats & Parkas</p>
+              <Link className="text-gray-600 text-sm cursor-pointer" href='#'>Explore Now!</Link>
+            </div>
+            <div>
+              <Image
+              src='/tees.png'
+              alt='tess'
+              height={500}
+              width={350}
+              />
+              <p className="text-black poppins text-xl font-medium mt-4">Tees & T-Shirt</p>
+              <Link className="text-gray-600 text-sm cursor-pointer" href='#'>Explore Now!</Link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
   );
-}
+};
+
+export default page;
