@@ -71,40 +71,158 @@ const page = () => {
           <Image src="/amazon.png" alt="amazon" height={100} width={150} />
         </div>
         {/* NEW ARRIVALS */}
-        <div>
-          <h1 className="text-black font-extrabold text-3xl poppins px-12 mb-14">NEW ARRIVALS</h1>
+        <div className="mb-22">
+          <h1 className="text-black font-extrabold text-3xl poppins px-28 mb-14">
+            NEW ARRIVALS
+          </h1>
           <div className="flex gap-28 justify-center">
             <div>
               <Image
-              src='/hoodies.png'
-              alt='hoodies'
-              height={500}
-              width={350}
+                src="/hoodies.png"
+                alt="hoodies"
+                height={500}
+                width={350}
               />
-              <p className="text-black poppins text-xl font-medium mt-4">Hoodies & Sweetshirt</p>
-              <Link className="text-gray-600 text-sm cursor-pointer" href='#'>Explore Now!</Link>
+              <p className="text-black poppins text-xl font-medium mt-4">
+                Hoodies & Sweetshirt
+              </p>
+              <Link className="text-gray-600 text-sm cursor-pointer" href="#">
+                Explore Now!
+              </Link>
             </div>
             <div>
-              <Image
-              src='/coots.png'
-              alt='coots'
-              height={500}
-              width={350}
-              />
-              <p className="text-black poppins text-xl font-medium mt-4">Coats & Parkas</p>
-              <Link className="text-gray-600 text-sm cursor-pointer" href='#'>Explore Now!</Link>
+              <Image src="/coots.png" alt="coots" height={500} width={350} />
+              <p className="text-black poppins text-xl font-medium mt-4">
+                Coats & Parkas
+              </p>
+              <Link className="text-gray-600 text-sm cursor-pointer" href="#">
+                Explore Now!
+              </Link>
             </div>
             <div>
-              <Image
-              src='/tees.png'
-              alt='tess'
-              height={500}
-              width={350}
-              />
-              <p className="text-black poppins text-xl font-medium mt-4">Tees & T-Shirt</p>
-              <Link className="text-gray-600 text-sm cursor-pointer" href='#'>Explore Now!</Link>
+              <Image src="/tees.png" alt="tess" height={500} width={350} />
+              <p className="text-black poppins text-xl font-medium mt-4">
+                Tees & T-Shirt
+              </p>
+              <Link className="text-gray-600 text-sm cursor-pointer" href="#">
+                Explore Now!
+              </Link>
             </div>
           </div>
+        </div>
+        {/* SALE BOARD */}
+        <div className="bg-[#fad13b] justify-between px-12 gap-24 flex">
+          <Image src="/model-2.png" alt="model-2" height={700} width={650} />
+          <div className="my-18 mx-18">
+            <p className="text-8xl font-[900] poppins text-black">
+              PAYDAY SALE NOW
+            </p>
+            <p className="text-black my-6 font-[400] text-3xl">
+              Spend minimal $100 get 30% off voucher code for your next purchase
+            </p>
+            <p className="text-black font-[900] text-3xl poppins">
+              1 June - 10 June 2021
+            </p>
+            <p className="text-black text-3xl">*Terms & Conditions apply</p>
+            <button className="bg-black py-4 px-8 rounded-md my-8">
+              SHOP NOW
+            </button>
+          </div>
+        </div>
+        <div className="mt-24">
+          <p className="text-black font-extrabold text-3xl poppins px-24 mb-14">
+            Young's Favourite
+          </p>
+          <div className="flex justify-center gap-6">
+            <div>
+              <Image
+                src="/model-3.png"
+                alt="model-3"
+                height={420}
+                width={650}
+              />
+              <p className="text-black poppins text-xl font-medium mt-4">
+                Trending on instagram
+              </p>
+              <Link className="text-gray-600 text-sm cursor-pointer" href="#">
+                Explore Now!
+              </Link>
+            </div>
+            <div>
+              <Image
+                src="/model-4.png"
+                alt="model-4"
+                height={420}
+                width={650}
+              />
+              <p className="text-black poppins text-xl font-medium mt-4">
+                All Under $40
+              </p>
+              <Link className="text-gray-600 text-sm cursor-pointer" href="#">
+                Explore Now!
+              </Link>
+            </div>
+          </div>
+        </div>
+        {/* DOWNLOAD APP */}
+        <div className="flex justify-between items-center ml-18 mr-36 my-18">
+          <div className="py-24 px-24 w-128">
+            <p className="poppins font-[900] text-3xl text-black">
+              DOWNLOAD APP & GET THE VOUCHER!
+            </p>
+            <p className="text-gray-400 text-md my-8 font-[400]">
+              Get 30% off for first transaction using Rondovision mobile app for
+              now.
+            </p>
+            <div className="flex gap-1">
+              <Link href="#">
+                <Image
+                  src="/app-store.png"
+                  alt="app-store"
+                  height={70}
+                  width={130}
+                />
+              </Link>
+              <Link href="#">
+                <Image
+                  className=""
+                  src="/google-play.png"
+                  alt="google-play"
+                  height={70}
+                  width={130}
+                />
+              </Link>
+            </div>
+          </div>
+          <Image
+            src="/mobile-app.png"
+            alt="mobile-app"
+            height={450}
+            width={300}
+          />
+        </div>
+        <div className="bg-[#fad13b] flex flex-col justify-center my-12 ">
+          <div className="text-center py-24 px-120">
+          <p className="poppins text-3xl font-[900] text-wrap">
+            JOIN SHOPPING COMMUNITY TO GET MONTHLY PROMO
+          </p>
+          <p className="poppins text-md">
+            Type your email down below and be young wild generation
+          </p>
+          <div className="bg-white rounded-xl justify-center w-fit">
+          <input 
+          style= "border: none"
+          className="bg-white text-gray-600 p-6 rounded-lg"
+          placeholder="Add your email here"
+          
+
+          />
+            <button className="bg-black py-4 px-8 rounded-lg mr-[8px]">
+              SEND
+            </button>
+          </div>
+          </div>
+
         </div>
       </div>
     </>
