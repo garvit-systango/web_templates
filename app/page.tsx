@@ -201,28 +201,81 @@ const page = () => {
             width={300}
           />
         </div>
-        <div className="bg-[#fad13b] flex flex-col justify-center my-12 ">
-          <div className="text-center py-24 px-120">
-          <p className="poppins text-3xl font-[900] text-wrap">
-            JOIN SHOPPING COMMUNITY TO GET MONTHLY PROMO
-          </p>
-          <p className="poppins text-md">
-            Type your email down below and be young wild generation
-          </p>
-          <div className="bg-white rounded-xl justify-center w-fit">
-          <input 
-          style= "border: none"
-          className="bg-white text-gray-600 p-6 rounded-lg"
-          placeholder="Add your email here"
-          
-
-          />
-            <button className="bg-black py-4 px-8 rounded-lg mr-[8px]">
-              SEND
-            </button>
+        <div className="bg-[#fad13b] flex flex-col justify-center mt-12 ">
+          <div className="text-center py-24 mx-auto px-120">
+            <p className="poppins text-5xl font-[700]  max-w-3xl text-wrap">
+              JOIN SHOPPING COMMUNITY TO GET MONTHLY PROMO
+            </p>
+            <p className="poppins font-medium text-2xl my-6">
+              Type your email down below and be young wild generation
+            </p>
+            <div className="bg-white mx-auto rounded-xl justify-between w-fit">
+              <input
+                className="bg-white text-gray-600 py-6 px-10 rounded-lg"
+                placeholder="Add your email here"
+              />
+              <button className="bg-black py-4 px-8 rounded-lg mr-[8px]">
+                SEND
+              </button>
+            </div>
           </div>
+        </div>
+        <div className="bg-black flex px-24 py-24 justify-between">
+          <div className="w-[320px]">
+            <p className="text-white poppins font-[900] text-4xl mb-6">
+              FASHION
+            </p>
+            <p className="text-gray-500 text-xl mb-6">
+              Complete your style with awesome clothes from us.
+            </p>
+            <div className="flex gap-3">
+              <Image
+                src="/facebook.png"
+                alt="facebook"
+                height={50}
+                width={50}
+              />
+              <Image
+                src="/instagram.png"
+                alt="instagram"
+                height={50}
+                width={50}
+              />
+              <Image
+                src="/linkedin.png"
+                alt="linkedin"
+                height={50}
+                width={50}
+              />
+              <Image
+                src="/twitter.png"
+                alt="twitter"
+                height={50}
+                width={50}
+              />
+            </div>
           </div>
-
+          <div className="flex gap-60 text-xl leading-[2.5] text-gray-400">
+            <div>
+              <p className="font-extrabold">Company</p>
+              <p>About</p>
+              <p>Contact us</p>
+              <p>Support</p>
+              <p>Careers</p>
+            </div>
+            <div>
+              <p className="font-extrabold">Quick Link</p>
+              <p>Share Location</p>
+              <p>Orders Tracking</p>
+              <p>Size Guide</p>
+              <p>FAQs</p>
+            </div>
+            <div>
+              <p className="font-extrabold">Legal</p>
+              <p>Terms & Conditions</p>
+              <p>Privacy Policy</p>
+            </div>
+          </div>
         </div>
       </div>
     </>
