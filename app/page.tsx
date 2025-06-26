@@ -9,15 +9,15 @@ const page = () => {
     <>
       <div className="bg-white">
         {/* Header */}
-        <div className="flex justify-between bg-white p-4">
+        <div className="flex justify-between bg-white p-4 mx-24">
           <Image
             src="/logo.png"
             alt="logo"
-            height={50}
-            width={130}
+            height={100}
+            width={200}
             className="ml-10"
           />
-          <div className="flex gap-12 mr-10 items-center text-black text-sm font-bold">
+          <div className="flex gap-12 mr-10 items-center text-black text-xl font-bold">
             <Link className="cursor-pointer" href="#">
               CATALOGUE
             </Link>
@@ -31,7 +31,7 @@ const page = () => {
               LIFESTYLE
             </Link>
             <button
-              className="bg-black font-normal text-white p-2 cursor-pointer rounded-sm"
+              className="bg-black font-normal items-center text-white px-4 py-2 cursor-pointer rounded-lg"
               onClick={() => {}}
             >
               SIGN UP
@@ -39,10 +39,10 @@ const page = () => {
           </div>
         </div>
         {/* Hero Section */}
-        <div className="bg-gray-100 px-12 pt-12 mt-2 mb-4 mr-13 ml-13 rounded-4xl">
-          <div className="flex">
+        <div className="bg-gray-100 pl-16 pt-12 mt-2 mb-4 mx-36 rounded-4xl relative">
+          <div className="flex justify-between">
             <div className="p-2 text-black">
-              <p className="text-left text-8xl text-wrap poppins font-extrabold tracking-tight">
+              <p className="text-left text-8xl w-lg text-wrap poppins font-extrabold tracking-tight">
                 LET'S EXPLORE UNIQUE CLOTHES.
               </p>
               <p className="my-8 text-black font-light text-3xl tracking-tight">
@@ -53,7 +53,35 @@ const page = () => {
               </button>
             </div>
             <Image
-              className="mt-6"
+              className="absolute right-50 top-25"
+              src="/hero-star.png"
+              alt="star"
+              height={40}
+              width={40}
+            />
+            <Image
+              className="absolute right-10 bottom-20"
+              src="/hero-star.png"
+              alt="star"
+              height={40}
+              width={40}
+            />
+            <Image
+              className="absolute right-170 bottom-10"
+              src="/hero-star.png"
+              alt="star"
+              height={40}
+              width={40}
+            />
+            <Image
+              className="absolute right-180 top-23"
+              src="/hero-star.png"
+              alt="star"
+              height={50}
+              width={50}
+            />
+            <Image
+              className="mt-6 mx-auto"
               src="/hero-model-1.png"
               alt="model-1"
               height={500}
@@ -71,8 +99,8 @@ const page = () => {
           <Image src="/amazon.png" alt="amazon" height={100} width={150} />
         </div>
         {/* NEW ARRIVALS */}
-        <div className="mb-22">
-          <h1 className="text-black font-extrabold text-3xl poppins px-28 mb-14">
+        <div className="mb-36 px-28">
+          <h1 className="text-black font-extrabold text-3xl poppins ml-4  mb-14">
             NEW ARRIVALS
           </h1>
           <div className="flex gap-28 justify-center">
@@ -80,8 +108,8 @@ const page = () => {
               <Image
                 src="/hoodies.png"
                 alt="hoodies"
-                height={500}
-                width={350}
+                height={650}
+                width={500}
               />
               <p className="text-black poppins text-xl font-medium mt-4">
                 Hoodies & Sweetshirt
@@ -91,7 +119,7 @@ const page = () => {
               </Link>
             </div>
             <div>
-              <Image src="/coots.png" alt="coots" height={500} width={350} />
+              <Image src="/coots.png" alt="coots" height={650} width={500} />
               <p className="text-black poppins text-xl font-medium mt-4">
                 Coats & Parkas
               </p>
@@ -100,7 +128,7 @@ const page = () => {
               </Link>
             </div>
             <div>
-              <Image src="/tees.png" alt="tess" height={500} width={350} />
+              <Image src="/tees.png" alt="tess" height={650} width={500} />
               <p className="text-black poppins text-xl font-medium mt-4">
                 Tees & T-Shirt
               </p>
@@ -111,9 +139,37 @@ const page = () => {
           </div>
         </div>
         {/* SALE BOARD */}
-        <div className="bg-[#fad13b] justify-between px-12 gap-24 flex">
+        <div className="bg-[#fad13b] justify-between px-12 gap-24 flex relative">
+        <Image
+            className="absolute left-138 top-15"
+            src="/sale-star.png"
+            alt="sale-star"
+            height={50}
+            width={50}
+          />
+          <Image
+            className="absolute left-150 bottom-40"
+            src="/sale-star.png"
+            alt="sale-star"
+            height={50}
+            width={50}
+          />
+          <Image
+            className="absolute left-25 top-30"
+            src="/sale-star.png"
+            alt="sale-star"
+            height={50}
+            width={50}
+          />
+          <Image
+            className="absolute left-45 bottom-65"
+            src="/sale-star.png"
+            alt="sale-star"
+            height={50}
+            width={50}
+          />
           <Image src="/model-2.png" alt="model-2" height={700} width={650} />
-          <div className="my-18 mx-18">
+          <div className="w-138 m-auto">
             <p className="text-8xl font-[900] poppins text-black">
               PAYDAY SALE NOW
             </p>
@@ -124,11 +180,12 @@ const page = () => {
               1 June - 10 June 2021
             </p>
             <p className="text-black text-3xl">*Terms & Conditions apply</p>
-            <button className="bg-black py-4 px-8 rounded-md my-8">
+            <button className="bg-black text-white font-bold text-2xl py-4 px-8 rounded-md my-8">
               SHOP NOW
             </button>
           </div>
         </div>
+        {/* young's */}
         <div className="mt-24">
           <p className="text-black font-extrabold text-3xl poppins px-24 mb-14">
             Young's Favourite
@@ -138,8 +195,8 @@ const page = () => {
               <Image
                 src="/model-3.png"
                 alt="model-3"
-                height={420}
-                width={650}
+                height={520}
+                width={750}
               />
               <p className="text-black poppins text-xl font-medium mt-4">
                 Trending on instagram
@@ -152,8 +209,8 @@ const page = () => {
               <Image
                 src="/model-4.png"
                 alt="model-4"
-                height={420}
-                width={650}
+                height={520}
+                width={750}
               />
               <p className="text-black poppins text-xl font-medium mt-4">
                 All Under $40
@@ -165,12 +222,12 @@ const page = () => {
           </div>
         </div>
         {/* DOWNLOAD APP */}
-        <div className="flex justify-between items-center ml-18 mr-36 my-18">
-          <div className="py-24 px-24 w-128">
-            <p className="poppins font-[900] text-3xl text-black">
+        <div className="flex justify-around items-center mx-auto my-18">
+          <div className="py-24 px-24 w-150">
+            <p className="poppins font-[900] text-4xl text-black">
               DOWNLOAD APP & GET THE VOUCHER!
             </p>
-            <p className="text-gray-400 text-md my-8 font-[400]">
+            <p className="text-gray-400 w-80 text-md my-8 font-[400]">
               Get 30% off for first transaction using Rondovision mobile app for
               now.
             </p>
@@ -197,8 +254,8 @@ const page = () => {
           <Image
             src="/mobile-app.png"
             alt="mobile-app"
-            height={450}
-            width={300}
+            height={550}
+            width={400}
           />
         </div>
         <div className="bg-[#fad13b] flex flex-col justify-center mt-12 ">
@@ -211,7 +268,7 @@ const page = () => {
             </p>
             <div className="bg-white mx-auto rounded-xl justify-between w-fit">
               <input
-                className="bg-white text-gray-600 py-6 px-10 rounded-lg"
+                className="bg-white border-none outline-none focus:ring-0 text-gray-600 py-6 px-10 rounded-lg"
                 placeholder="Add your email here"
               />
               <button className="bg-black py-4 px-8 rounded-lg mr-[8px]">
@@ -247,12 +304,7 @@ const page = () => {
                 height={50}
                 width={50}
               />
-              <Image
-                src="/twitter.png"
-                alt="twitter"
-                height={50}
-                width={50}
-              />
+              <Image src="/twitter.png" alt="twitter" height={50} width={50} />
             </div>
           </div>
           <div className="flex gap-60 text-xl leading-[2.5] text-gray-400">
